@@ -1,0 +1,72 @@
+# Docker ignore file - excludes files from Docker build context
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDE
+.idea
+.vscode
+.eclipse
+.settings
+.classpath
+.project
+.factorypath
+*.iml
+*.ipr
+*.iws
+
+# Build outputs
+target/
+build/
+out/
+bin/
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.pytest_cache/
+htmlcov/
+
+# Documentation
+*.md
+README.md
+HELP.md
+docs/
+
+# Docker files (no need to copy into image)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Environment files
+.env
+.env.*
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# Maven wrapper (optional - uncomment if you don't want it in image)
+# .mvn/
+# mvnw
+# mvnw.cmd
+
+# Node modules (if any frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
