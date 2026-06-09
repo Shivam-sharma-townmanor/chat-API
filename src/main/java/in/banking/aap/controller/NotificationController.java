@@ -24,6 +24,7 @@ import java.util.Map;
  * GET /api/notifications/client/{clientId}/unread-count - Get unread count for client
  */
 @Slf4j
+@CrossOrigin
 @Tag(name = "Notifications", description = "Notification APIs")
 @RestController
 @RequestMapping("/api/notifications")

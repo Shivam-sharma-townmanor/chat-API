@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
  * GET /api/chats/client/{clientId} - Get chat rooms for a client
  */
 @Slf4j
+@CrossOrigin
 @Tag(name = "Chats", description = "Chat Room APIs")
 @RestController
 @RequestMapping("/api/chats")

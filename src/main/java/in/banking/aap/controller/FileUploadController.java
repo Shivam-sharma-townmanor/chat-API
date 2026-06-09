@@ -19,6 +19,7 @@ import java.util.Map;
  * DELETE /api/upload/image - Delete image file
  */
 @Slf4j
+@CrossOrigin
 @Tag(name = "File Upload", description = "Image Upload APIs")
 @RestController
 @RequestMapping("/api/upload")

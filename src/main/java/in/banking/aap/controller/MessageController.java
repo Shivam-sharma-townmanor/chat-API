@@ -31,6 +31,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
 @Tag(name = "Messages", description = "Message Management APIs")
 @Slf4j
+@CrossOrigin
 @RestController
 @RequestMapping("/api/messages")
 @RequiredArgsConstructor

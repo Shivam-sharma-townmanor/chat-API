@@ -3,6 +3,7 @@ package in.banking.aap.controller;
 
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,7 @@ import java.util.Map;
  * Provides basic health endpoint to verify application startup.
  */
 @RestController
+@CrossOrigin
 @Tag(name = "Health", description = "Application Health APIs")
 @RequestMapping("/health")
 public class HealthController {

@@ -27,6 +27,7 @@ import org.springframework.web.bind.annotation.*;
  * GET /api/connections/client/{clientId}/pending - Get pending requests
  */
 @Slf4j
+@CrossOrigin
 @Tag(name = "Connections", description = "Connection Management APIs")
 @RestController
 @RequestMapping("/api/connections")
