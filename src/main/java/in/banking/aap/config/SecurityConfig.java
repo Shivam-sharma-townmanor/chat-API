@@ -38,9 +38,6 @@ public class SecurityConfig implements WebMvcConfigurer {
             throws Exception {
 
         http
-        	.requiresChannel(channel -> 
-        				channel.anyRequest().requiresSecure()
-        				)
             .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(auth -> auth
                     .requestMatchers(
